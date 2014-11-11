@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./images/favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./supporting-cast/bootstrap.min.css" rel="stylesheet">
+    <link href="./supporting-cast/bootstrap-switch.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./stylesheets/jumbotron.css" rel="stylesheet">
+    <link href="./stylesheets/buttons.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div id="top-bar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./">Dumpling Hut</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <img height="30px" width="100px" src="./images/prings.png">
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1><b>We are OPEN BABY!</b></h1>
+        <p id="security-concerns">For all concerns regarding the handling of credit card information please visit our contributing apis security page <a href="https://stripe.com/help/security">here</a>.</p>
+        <br>
+        <p>Buy 10 Dumplings get 2 Free!</p>
+        <p>Buy 20 Dumplings get 5 Free!</p>
+        <p>Buy 40 Dumplings get 10 Free!</p>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2 id="items">Items</h2>
+          <h2 id="sauces">Sauces</h2>
+          <br>
+          <div>
+            <h2>Order</h2>
+            <p align="center" font-size="10">(Enter the Quantity)</p>
+            <br>
+            <div id="order"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h2>Order Information</h2>
+          <div align="center">
+            <input type="checkbox" name="my-checkbox" data-on-text="Delivery" data-off-text="Pickup" checked>
+            <p>Please note that delivery carries a charge of $2.50</p>
+          </div>
+          <br>
+          <div id="user-information">
+            <p>Name&nbsp;&nbsp;&nbsp;<input type="text" id="cust-name"></input></p>
+            <p>Phone Number&nbsp;&nbsp;&nbsp;<input type="text" id="number"></input></p>
+            <p>Street Address&nbsp;&nbsp;&nbsp;<input type="text" id="address"></input></p>
+            <p>Zip Code&nbsp;&nbsp;&nbsp;<input type="text" id="zip-code" size="5"></input>&nbsp;&nbsp;&nbsp;Apartment Number&nbsp;&nbsp;&nbsp;<input type="text" id="apartment" size="4"></input></p>
+            <button id="search-address">Find Address</button>
+            <br>
+            <div id="addresses"></div>
+            <br>
+          </div>
+       </div>
+        <div class="col-md-4">
+          <h2>Payment</h2>
+          <div align="center">
+            <br><br>
+            <a align="center" class="btn btn-default" id="credit_button" role="button">Pay by Credit Card</a>
+            <br>
+            <a align="center" class="btn btn-default" id="cash_button" role="button">Pay with Cash</a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Dumpling Hut 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./supporting-cast/jquery.min.js"></script>
+    <script src="./supporting-cast/bootstrap.min.js"></script>
+    <script src="./supporting-cast/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script src="./javascripts/client.js"></script>
+  </body>
+</html>
